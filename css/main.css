@@ -1,0 +1,231 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::selection
+{
+    color: #fff;
+    background-color: green;
+}
+.box
+{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.container
+{
+    width: 100%;
+}
+.box .bg-quots
+{
+    width: 50%;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    /* border-radius: 20px; */
+    position: absolute;
+    z-index: 999;
+    top: 10%;
+    padding-bottom: 30px;
+    left: 25%;
+    border-radius: 20px;
+}
+.title
+{
+    font-optical-sizing: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+p {
+    font-size: 35px;
+    font-family: Times New Roman;
+}
+.title h3 {
+    font-size: 80px;
+    font-weight: 700;
+    font-family: impact;
+    font-style: normal;
+    padding-bottom: 30px;
+}
+.txtBox
+{
+    width: 80%;
+    margin:40px auto 0 auto;
+    position: relative;
+}
+.txtQuote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div#btn:hover {
+    background-color: green;
+    transition: all 0.3s;
+}
+.text-icon
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.text-icon svg
+{
+    font-size: 22px;
+}
+.text-icon svg:first-child
+{
+    margin: 3px 10px 0 0 ;
+}
+.text-icon svg:last-child
+{
+    margin: 0 0 3px 10px;
+}
+.text-icon p
+{
+    text-align: center;
+    font-size: 22px;
+}
+.name
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.name span:first-child
+{
+    width: 25px;
+    height: 1px;
+    background-color: #000;
+    margin-right: 5px;
+}
+.txtBox::before
+{
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: .3px;
+    background-color: #ddd;
+}
+.row
+{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin:50px auto 0 auto;
+    justify-content: space-between;
+}
+.icon-media
+{
+    width: 70%;
+}
+
+
+.buttonQuote
+{
+    width: 25%;
+    text-align: center;
+    padding: 12px 0;
+    background-color: blue;
+}
+.buttonQuote a
+{
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+@media(max-width:1244px)
+{
+    .box .bg-quots
+{
+    width: 65%;
+    left: 17%;
+}
+}
+@media(max-width:839px)
+{
+    .icon-media .icon1
+{
+    cursor: pointer;
+    width:40px;
+    margin-right:10px;
+    height: 40px;
+}
+.buttonQuote
+{
+    width: 30%;
+}
+}
+@media(max-width:681px)
+{
+    .box .bg-quots
+    {
+        width: 75%;
+        top: 10%;
+        left: 13%;
+    }
+    .row
+    {
+        flex-direction: column-reverse;
+    }
+    .buttonQuote
+{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.icon-media
+{
+    width: 100%;
+    justify-content: center;
+}
+}
+@media(max-width:573px)
+{
+    .box .bg-quots
+    {
+        width: 85%;
+        top: 13%;
+        left: 7%;
+    }
+}
+@media(max-width:508px)
+{
+    .box .bg-quots
+    {
+        width: 90%;
+        top: 6%;
+        left: 5%;
+    }
+}
+@media(max-width:376px)
+{
+    .box .bg-quots
+    {
+        width: 95%;
+        left: 2.5%;
+    }
+    .title
+    {
+        padding-top: 35px;
+    }
+    .txtBox
+{
+    width: 80%;
+    margin:25px auto 0 auto;
+    position: relative;
+}
+.row
+{
+    margin:30px auto 0 auto;
+}
+}
